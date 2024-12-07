@@ -1,10 +1,10 @@
 {
-  "name": "webpack-template",
+  "name": "odin-todoodoo",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
